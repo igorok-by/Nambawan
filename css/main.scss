@@ -8,19 +8,25 @@
 /* Styles of first screen
 --------------------------*/
 
-.first-screen {
+.screen {
   min-height: 100vh;
   width: 94.429vw;
   margin-left: 5.571vw;
-  padding-left: 3.857vw;
-  padding-right: 7vw;
-  padding-top: 3.071vw;
-  background: url("/img/first-page_overlay.png"), url("/img/first-page_mountain.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: $white;
+
+  &--first {
+    padding-left: 3.857vw;
+    padding-right: 7vw;
+    padding-top: 3.071vw;
+    background: url("/img/first-screen_overlay.png"), url("/img/first-screen_mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+  }
 }
+
+
+// Header
 
 .first-header {
   display: flex;
@@ -31,10 +37,8 @@
 .first-logo {
   width: rem(122);
   height: rem(54);
-  background: url("/img/header-logo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+  @include img-position("/img/header-logo.png");
 }
 
 .first-phone {
@@ -62,6 +66,9 @@
   }
 }
 
+
+// Front First screen
+
 .first-front {
   margin-top: 15.944vh;
   margin-bottom: 16.582vh;
@@ -81,11 +88,17 @@
   }
 }
 
+
+// Footer First screen
+
 .first-footer {
   display: flex;
   justify-content: space-between;
   width: rem(853);
 }
+
+
+// Feature First screen
 
 .first-feature {
   width: rem(252);
@@ -104,6 +117,9 @@
     border-bottom-color: $primary;
   }
 }
+
+
+// Btn First screen
 
 .first-button {
   display: flex;
@@ -125,10 +141,8 @@
   &__sign {
     width: 16px;
     height: 31px;
-    background: url("/img/btn-arrow.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    @include img-position("/img/btn-arrow.png");
   }
 
   &__sign--animate {
@@ -150,6 +164,76 @@
   }
 }
 /*-------end--------*/
+
+
+/* Styles of Second screen
+--------------------------*/
+
+.screen--second {
+  display: flex;
+  color: $black;
+}
+
+.video {
+  width: 45.714vw;
+  background: url("/img/second-screen_jumper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right -212px top 0px;;
+
+  &::before {
+    position: relative;
+    display: block;
+    width: 45.714vw;
+    height: 100%;
+    content: '';
+    @include img-position("/img/second-screen_overlay.png");
+  }
+}
+
+.video-sign {
+
+}
+
+.video-sign-btn {
+
+  &__dscr {
+
+  }
+}
+
+.feat {
+
+}
+
+.feat-text {
+  
+  &__heading{
+
+  }
+
+  &__dscr{
+    
+  }
+}
+
+.feat-box-wrap {
+
+}
+
+.feat-box {
+  
+  &__sign{
+
+  }
+
+  &__dscr{
+    
+  }
+}
+
+/*-------end--------*/
+
 
 
 
@@ -217,10 +301,8 @@
     width: 18px;
     height: 17px;
     margin: 0 auto;
-    background: url("/img/logo-menu.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    @include img-position("/img/logo-menu.png");
   }
 
   &__dscr {
@@ -250,12 +332,6 @@
     color: $primary;
   }
 
-  &__sign {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
   &__dscr {
     opacity: 0.4;
     font-family: Raleway;
@@ -271,7 +347,8 @@
   &__sign {
     width: 25px;
     height: 15px;
-    background: url("/img/logo-vk.png");
+
+    @include img-position("/img/logo-vk.png");
   }
 }
 
@@ -281,7 +358,8 @@
   &__sign {
     width: 17px;
     height: 17px;
-    background: url("/img/logo-inst.png");
+
+    @include img-position("/img/logo-inst.png");
   }
 }
 /*-------end--------*/

@@ -1,4 +1,5 @@
 // px to rem
+
 @function rem($pixels, $context: $mainFontSize) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
@@ -11,8 +12,12 @@
   @return $pixels / $context * 1rem;
 }
 
-// Size
-@mixin size($width,$height: $width) {
-  width: $width;
-  height: $height;
+
+// Background-image positioning
+
+@mixin img-position($url) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
