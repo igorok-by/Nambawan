@@ -1,18 +1,129 @@
-@font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-Regular.ttf") format("truetype")
+@import "utils/normalize.css";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/global";
+@import "utils/fonts";
+
+
+/* Styles of first screen
+--------------------------*/
+
+.first-screen {
+  min-height: 100vh;
+  margin-left: rem(78);
+  padding-left: rem(54);
+  padding-right: rem(98);
+  padding-top: rem(43);
+  background: url("/img/first-page_overlay.png"), url("/img/first-page_mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
 }
 
-@font-face {
-  font-family: "Raleway - Semi Bold";
-  src: url("/fonts/Raleway-SemiBold.ttf") format("truetype")
+.first-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-@font-face {
-  font-family: "Raleway - Extra Bold";
-  src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype")
+.first-logo {
+  width: rem(122);
+  height: rem(54);
+  background: url("/img/header-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
+.first-phone {
+  margin-top: rem(4);
+  text-align: right;
+
+  &__numb {
+    height: rem(14);
+    margin-bottom: rem(9);
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(17);
+    font-weight: 400;
+  }
+
+  &__dscr {
+    opacity: 0.7;
+    font-family: "Raleway - Semi Bold";
+    font-size: rem(11);
+    text-transform: uppercase;
+  }
 }
+
+.first-front {
+
+  &__heading {
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(21);
+    color: $primary;
+    letter-spacing: rem(1.05);
+  }
+
+  &__dscr {
+    width: 55.5vw;
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(56);
+  }
+}
+
+.first-footer {
+
+}
+
+.first-feature {
+
+}
+
+.first-button {
+  &__arrow {
+
+  }
+
+  &__dscr {
+
+  }
+}
+/*-------end--------*/
+
+
+/* Styles of side-menu
+-----------------------*/
+
+.menu {
+
+}
+
+.menu-list {
+
+}
+
+.menu-social {
+
+}
+
+.menu-social-vk {
+  &__sign {
+
+  }
+
+  &__dscr {
+
+  }
+}
+
+.menu-social-inst {
+  &__sign {
+
+  }
+
+  &__dscr {
+
+  }
+}
+/*-------end--------*/

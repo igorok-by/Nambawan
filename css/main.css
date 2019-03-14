@@ -1,14 +1,90 @@
-@font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Raleway - Semi Bold";
-  src: url("/fonts/Raleway-SemiBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Raleway - Extra Bold";
-  src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype"); }
+@import url(utils/normalize.css);
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 1280px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 14px; } }
 
 body {
   font-family: "Raleway", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Raleway - Semi Bold";
+  src: url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Raleway - Extra Bold";
+  src: url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype"); }
+
+/* Styles of first screen
+--------------------------*/
+.first-screen {
+  min-height: 100vh;
+  margin-left: 4.875rem;
+  padding-left: 3.375rem;
+  padding-right: 6.125rem;
+  padding-top: 2.6875rem;
+  background: url("/img/first-page_overlay.png"), url("/img/first-page_mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white; }
+
+.first-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.first-logo {
+  width: 7.625rem;
+  height: 3.375rem;
+  background: url("/img/header-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.first-phone {
+  margin-top: 0.25rem;
+  text-align: right; }
+  .first-phone__numb {
+    height: 0.875rem;
+    margin-bottom: 0.5625rem;
+    font-family: "Raleway - Extra Bold";
+    font-size: 1.0625rem;
+    font-weight: 400; }
+  .first-phone__dscr {
+    opacity: 0.7;
+    font-family: "Raleway - Semi Bold";
+    font-size: 0.6875rem;
+    text-transform: uppercase; }
+
+.first-front__heading {
+  font-family: "Raleway - Extra Bold";
+  font-size: 1.3125rem;
+  color: #10e08b;
+  letter-spacing: 0.06563rem; }
+
+.first-front__dscr {
+  width: 55.5vw;
+  font-family: "Raleway - Extra Bold";
+  font-size: 3.5rem; }
+
+/*-------end--------*/
+/* Styles of side-menu
+-----------------------*/
+/*-------end--------*/
