@@ -10,10 +10,11 @@
 
 .first-screen {
   min-height: 100vh;
-  margin-left: rem(78);
-  padding-left: rem(54);
-  padding-right: rem(98);
-  padding-top: rem(43);
+  width: 94.429vw;
+  margin-left: 5.571vw;
+  padding-left: 3.857vw;
+  padding-right: 7vw;
+  padding-top: 3.071vw;
   background: url("/img/first-page_overlay.png"), url("/img/first-page_mountain.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +40,7 @@
 .first-phone {
   margin-top: rem(4);
   text-align: right;
+  color: $white;
 
   &__numb {
     height: rem(14);
@@ -57,57 +59,117 @@
 }
 
 .first-front {
+  margin-top: 15.944vh;
+  margin-bottom: 16.582vh;
 
   &__heading {
+    margin-bottom: 4.464vh;
     font-family: "Raleway - Extra Bold";
-    font-size: rem(21);
+    font-size: 2.679vh;
     color: $primary;
     letter-spacing: rem(1.05);
   }
 
   &__dscr {
-    width: 55.5vw;
+    max-width: 70vw;
     font-family: "Raleway - Extra Bold";
-    font-size: rem(56);
+    font-size: 7.143vh;
   }
 }
 
 .first-footer {
-
+  display: flex;
+  justify-content: space-between;
+  width: rem(853);
 }
 
 .first-feature {
+  width: rem(252);
+  padding-right: rem(60);
+  padding-bottom: rem(15);
+  border-bottom-style: solid;
+  border-bottom-width: rem(2);
+  border-bottom-color: rgba(145, 145, 145, 0.49);
+  font-family: "Raleway - Semi Bold";
+  font-size: rem(15);
+  font-weight: 400;
+  letter-spacing: 0.45px;
 
+  &:hover {
+    color: $primary;
+    border-bottom-color: $primary;
+  }
 }
 
 .first-button {
-  &__arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(270);
+  height: rem(63);
 
+  &--primary {
+    position: absolute;
+    bottom: 0;
+    right: 7vw;
+    background-color: $primary;
+    padding-left: rem(38);
+    padding-right: rem(48);
+    color: $white;
+  }
+
+  &__sign {
+    width: 16px;
+    height: 31px;
+    background: url("/img/btn-arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__sign--animate {
+    animation: top-down 1s ease-in-out infinite;
+    margin-bottom: rem(9);
+  }
+
+  @keyframes top-down {
+    0%,
+    100% { transform: translate(0, 0) }
+    50% { transform: translate(0, rem(10)) }
   }
 
   &__dscr {
-
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(18);
   }
 }
 /*-------end--------*/
 
 
-/* Styles of side-menu
+/* Styles of sidebar
 -----------------------*/
 
-.menu {
+.sidebar {
 
 }
 
-.menu-list {
+.sidebar-menu {
+  &__sign {
+
+  }
+
+  &__dscr {
+
+  }  
+}
+
+.sidebar-social {
 
 }
 
-.menu-social {
-
-}
-
-.menu-social-vk {
+.sidebar-social-vk {
   &__sign {
 
   }
@@ -117,7 +179,7 @@
   }
 }
 
-.menu-social-inst {
+.sidebar-social-inst {
   &__sign {
 
   }
