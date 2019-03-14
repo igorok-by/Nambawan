@@ -66,6 +66,8 @@ a {
   margin-top: 0.25rem;
   text-align: right;
   color: white; }
+  .first-phone:hover {
+    color: #10e08b; }
   .first-phone__numb {
     height: 0.875rem;
     margin-bottom: 0.5625rem;
@@ -150,6 +152,103 @@ a {
     line-height: 1.125rem; }
 
 /*-------end--------*/
+/* Styles of Navigation
+------------------------*/
+.nav {
+  position: fixed;
+  top: calc( 100vh / 2 - 20px);
+  right: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 2.5rem;
+  height: 2.5625rem; }
+  .nav__line {
+    width: 1.1875rem;
+    height: 1px;
+    background-color: white; }
+  .nav__line--active {
+    width: 2.4375rem;
+    height: 2px;
+    background-color: #10e08b; }
+
+/*-------end--------*/
 /* Styles of sidebar
 -----------------------*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4.875rem;
+  height: 100vh;
+  padding-top: 2.8125rem; }
+  .sidebar--text-color {
+    color: black; }
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2.375rem;
+  margin: 0 auto; }
+  .sidebar-menu:hover {
+    color: #10e08b; }
+  .sidebar-menu__sign {
+    width: 18px;
+    height: 17px;
+    margin: 0 auto;
+    background: url("/img/logo-menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .sidebar-menu__dscr {
+    margin: 0 auto;
+    font-family: "Raleway - Extra Bold";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5; }
+
+.sidebar-social {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 18px;
+  transform: rotate(270deg) translate(130px, -80px);
+  line-height: 18px; }
+
+.sidebar-social-vk, .sidebar-social-inst {
+  display: flex;
+  justify-content: space-between; }
+  .sidebar-social-vk:hover, .sidebar-social-inst:hover {
+    color: #10e08b; }
+  .sidebar-social-vk__sign, .sidebar-social-inst__sign {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .sidebar-social-vk__dscr, .sidebar-social-inst__dscr {
+    opacity: 0.4;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+.sidebar-social-vk {
+  width: 108px; }
+  .sidebar-social-vk__sign {
+    width: 25px;
+    height: 15px;
+    background: url("/img/logo-vk.png"); }
+
+.sidebar-social-inst {
+  width: 97px; }
+  .sidebar-social-inst__sign {
+    width: 17px;
+    height: 17px;
+    background: url("/img/logo-inst.png"); }
+
 /*-------end--------*/

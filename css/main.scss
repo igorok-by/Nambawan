@@ -42,6 +42,10 @@
   text-align: right;
   color: $white;
 
+  &:hover {
+    color: $primary;
+  }
+
   &__numb {
     height: rem(14);
     margin-bottom: rem(9);
@@ -148,44 +152,136 @@
 /*-------end--------*/
 
 
+
+
+
+/* Styles of Navigation
+------------------------*/
+
+.nav {
+  position: fixed;
+  top: calc( 100vh / 2 - 20px );
+  right: rem(28);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: rem(40);
+  height: rem(41);
+
+  &__line {
+    width: rem(19);
+    height: 1px;
+    background-color: $white;
+  }
+
+  &__line--active {
+    width: rem(39);
+    height: 2px;
+    background-color: $primary;
+  }
+}
+/*-------end--------*/
+
+
 /* Styles of sidebar
 -----------------------*/
-
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: rem(78);
+  height: 100vh;
+  padding-top: rem(45);
 
+  &--text-color {
+    color: $black;
+  }
 }
 
 .sidebar-menu {
-  &__sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: rem(38);
+  margin: 0 auto;
 
+  &:hover {
+    color: $primary;
+  }
+
+  &__sign {
+    width: 18px;
+    height: 17px;
+    margin: 0 auto;
+    background: url("/img/logo-menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   &__dscr {
-
+    margin: 0 auto;
+    font-family: "Raleway - Extra Bold";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5;
   }  
 }
 
 .sidebar-social {
-
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 18px;
+  transform: rotate(270deg) translate(130px, -80px);
+  line-height: 18px;
 }
 
-.sidebar-social-vk {
-  &__sign {
+.sidebar-social-vk, .sidebar-social-inst {
+  display: flex;
+  justify-content: space-between;
+  
+  &:hover {
+    color: $primary;
+  }
 
+  &__sign {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   &__dscr {
+    opacity: 0.4;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
 
+.sidebar-social-vk {
+  width: 108px;
+
+  &__sign {
+    width: 25px;
+    height: 15px;
+    background: url("/img/logo-vk.png");
   }
 }
 
 .sidebar-social-inst {
+  width: 97px;
+
   &__sign {
-
-  }
-
-  &__dscr {
-
+    width: 17px;
+    height: 17px;
+    background: url("/img/logo-inst.png");
   }
 }
 /*-------end--------*/
