@@ -164,7 +164,7 @@ a {
   background: url("/img/second-screen_jumper.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right -212px top 0px; }
+  background-position: right -13.25rem top 0px; }
   .video::before {
     position: relative;
     display: block;
@@ -175,6 +175,32 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
+
+.video-btn {
+  position: relative;
+  left: 15.68vw;
+  bottom: 55.21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 7.8125rem;
+  height: 7.125rem; }
+  .video-btn__sign {
+    position: relative;
+    left: 0.125rem;
+    width: 4.75rem;
+    height: 4.75rem;
+    background: url("/img/play-btn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .video-btn__dscr {
+    font-family: Raleway;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.3125rem;
+    color: white; }
 
 /*-------end--------*/
 /* Styles of Navigation
