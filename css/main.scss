@@ -44,7 +44,7 @@
 .first-phone {
   margin-top: rem(4);
   text-align: right;
-  color: $white;
+  transition: all .3s ease-in-out;
 
   &:hover {
     color: $primary;
@@ -99,7 +99,6 @@
 
 
 // Feature First screen
-
 .first-feature {
   width: rem(252);
   padding-right: rem(60);
@@ -107,14 +106,15 @@
   border-bottom-style: solid;
   border-bottom-width: rem(2);
   border-bottom-color: rgba(145, 145, 145, 0.49);
+  transition: all .3s ease-in-out;
   font-family: "Raleway - Semi Bold";
   font-size: rem(15);
   font-weight: 400;
   letter-spacing: 0.45px;
 
   &:hover {
-    color: $primary;
     border-bottom-color: $primary;
+    color: $primary;
   }
 }
 
@@ -174,6 +174,9 @@
   color: $black;
 }
 
+
+// Video
+
 .video {
   width: 45.714vw;
   background: url("/img/second-screen_jumper.png");
@@ -207,6 +210,8 @@
     left: rem(2);
     width: rem(76);
     height: rem(76);
+    transition: all .3s ease-in-out;
+
     @include img-position("/img/play-btn.png");
   }
 
@@ -219,36 +224,94 @@
   }
 }
 
+
+// Features second screen
+
 .feat {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 14.031vh;
+  padding-bottom: 9.184vh;
+  padding-left: 3.857vw;
+  padding-right: 6.857vw;
 }
 
+// Text block
 .feat-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 37.755vh;
   
-  &__heading{
-
+  &__heading {
+    max-width: rem(532);
+    font-family: "Raleway - Extra Bold";
+    font-size: 6.122vh;
+    font-weight: 400;
+    line-height: rem(56);
   }
 
-  &__dscr{
-    
+  &__dscr {
+    max-width: rem(480);
+    height: rem(87);
+    font-family: Raleway;
+    font-size: rem(21);
+    font-weight: 400;
+    line-height: rem(34);
   }
 }
 
+// Boxes
 .feat-box-wrap {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .feat-box {
-  
-  &__sign{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 18.286vw;
+  height: rem(197);
+  padding: rem(29) 1.714vw;
+  background-color: $grey-light;
+  border: 1px solid $grey-light;
+  transition: all .3s ease-in-out;
 
+  &:hover {
+    border-color: $primary;
+  }
+  
+  &__sign {
+    width: rem(75);
+    height: rem(75);
   }
 
-  &__dscr{
-    
+  &__sign--world {
+    @include img-position("/img/feat-world.png");
+  }
+
+  &__sign--space {
+    width: rem(77);
+    height: rem(82);
+
+    @include img-position("/img/feat-space.png");
+  }
+
+  &__dscr {
+    text-align: center;
+    font-family: Raleway;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(21);
+  }
+
+  &__dscr--minify {
+    max-width: rem(140);
   }
 }
-
 /*-------end--------*/
 
 
@@ -309,6 +372,7 @@
   justify-content: space-between;
   height: rem(38);
   margin: 0 auto;
+  transition: all .3s ease-in-out;
 
   &:hover {
     color: $primary;
@@ -344,6 +408,7 @@
 .sidebar-social-vk, .sidebar-social-inst {
   display: flex;
   justify-content: space-between;
+  transition: all .3s ease-in-out;
   
   &:hover {
     color: $primary;
