@@ -12,6 +12,7 @@ html {
       font-size: 14px; } }
 
 body {
+  margin-left: 5.571vw;
   font-family: "Raleway", sans-serif; }
 
 * {
@@ -22,6 +23,11 @@ body {
 a {
   text-decoration: none;
   color: inherit; }
+
+em,
+i {
+  font-style: normal;
+  color: #10e08b; }
 
 @font-face {
   font-family: "Raleway";
@@ -39,8 +45,7 @@ a {
 --------------------------*/
 .screen {
   min-height: 100vh;
-  width: 94.429vw;
-  margin-left: 5.571vw; }
+  width: 94.429vw; }
   .screen--first {
     padding-left: 3.857vw;
     padding-right: 7vw;
@@ -89,7 +94,6 @@ a {
     margin-bottom: 4.464vh;
     font-family: "Raleway - Extra Bold";
     font-size: 2.679vh;
-    color: #10e08b;
     letter-spacing: 0.06563rem; }
   .first-front__dscr {
     max-width: 70vw;
@@ -224,7 +228,7 @@ a {
     font-family: "Raleway - Extra Bold";
     font-size: 6.122vh;
     font-weight: 400;
-    line-height: 3.5rem; }
+    line-height: 7.125vh; }
   .feat-text__dscr {
     max-width: 30rem;
     height: 5.4375rem;
@@ -273,6 +277,123 @@ a {
     line-height: 1.3125rem; }
   .feat-box__dscr--minify {
     max-width: 8.75rem; }
+
+/*-------end--------*/
+/* Section How it was
+---------------------------*/
+.how-it-was {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.875rem;
+  padding-left: 6.875rem;
+  padding-right: 6.875rem; }
+  .how-it-was__heading {
+    font-family: "Raleway - Extra Bold";
+    font-size: 6.122vh;
+    font-weight: 400;
+    line-height: 7.125vh;
+    margin-bottom: 4.875rem; }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3.625rem; }
+  .gallery--reverse {
+    flex-direction: row-reverse; }
+
+.gallery-img__photo {
+  margin-bottom: 1.3125rem;
+  width: 28.375rem;
+  height: 19.75rem; }
+
+.gallery-img__photo--snow {
+  background: url("/img/gallery-snow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.gallery-img__photo--sea {
+  background: url("/img/gallery-sea.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.gallery-img__dscr {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.625rem; }
+  .gallery-img__dscr i {
+    font-family: "Raleway - Extra Bold";
+    font-weight: 700;
+    letter-spacing: 0.03375rem; }
+
+.gallery-img__numb {
+  font-family: Raleway;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b3b3b3;
+  transform: rotate(270deg) translate(16.0625rem, -15rem); }
+  .gallery-img__numb b {
+    font-family: "Raleway - Extra Bold";
+    font-weight: 700; }
+
+.gallery-img__name {
+  font-family: "Raleway - Extra Bold";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  transform: rotate(270deg) translate(0, 15.875rem); }
+
+.gallery-btn {
+  position: relative;
+  left: 25.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 3.75rem;
+  background-color: white; }
+  .gallery-btn__left {
+    width: 2.5rem;
+    height: 3.75rem;
+    background: url("/img/btn-arrow_left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    transition: all .3s ease-in-out; }
+  .gallery-btn__right {
+    width: 2.5rem;
+    height: 3.75rem;
+    background: url("/img/btn-arrow_right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    transition: all .3s ease-in-out; }
+  .gallery-btn__left:hover, .gallery-btn__right:hover {
+    background-color: #10e08b; }
+
+.slogan {
+  margin-right: 5.4375rem;
+  margin-left: 6rem;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: #999999; }
+  .slogan em {
+    color: #10e08b; }
 
 /*-------end--------*/
 /* Styles of Navigation
