@@ -9,10 +9,17 @@
 --------------------------*/
 
 .screen {
-  min-height: 100vh;
   width: 94.429vw;
+  height: 100vh;
+  @media screen and (max-width: $tableWidth) {
+    width: 100%;
+  }
 
   &--first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 890px;
     padding-left: 3.857vw;
     padding-right: 7vw;
     padding-top: 5.598vh;
@@ -20,6 +27,10 @@
     background-repeat: no-repeat;
     background-position: -371px -86px;
     color: $white;
+
+    @media screen and (max-width: $tableWidth) {
+      padding-left: 0;
+    }
   }
 
   &--first::before {
@@ -29,8 +40,20 @@
     display: block;
     width: 94.429vw;
     height: 100%;
+    max-height: 890px;
     content: '';
     @include img-position("/img/first-screen_overlay.png");
+
+    @media screen and (max-width: $tableWidth) {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.first-wrap {
+  @media screen and (max-width: $tableWidth) {
+    margin-left: rem(70);
   }
 }
 
@@ -49,7 +72,6 @@
   height: rem(54);
 
   @include img-position("/img/header-logo.png");
-
 }
 
 .first-phone {
@@ -84,6 +106,11 @@
   margin-top: 15.522vh;
   margin-bottom: 15.522vh;
 
+  @media screen and (max-width: $desktopWidth) {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
   &__heading {
     margin-bottom: 2.29vh;
     font-family: "Raleway - Extra Bold";
@@ -97,7 +124,13 @@
     font-family: "Raleway - Extra Bold";
     font-size: 7.1vh;
     line-height: 8.715vh;
+
+    @media screen and (max-width: $desktopWidth) {
+      font-size: 70px;
+      line-height: 85px;
+    }
   }
+  
 }
 
 
@@ -136,6 +169,7 @@
 // Btn First screen
 
 .first-button {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,9 +177,7 @@
   height: rem(63);
 
   &--primary {
-    position: absolute;
-    bottom: 0;
-    right: 7vw;
+    align-self: flex-end;
     padding-top: rem(6);
     padding-left: rem(38);
     padding-right: rem(48);
@@ -186,7 +218,15 @@
 
 .screen--second {
   display: flex;
+  max-height: 1025px;
   color: $black;
+
+  @media screen and (max-width: $desktopWidth) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
 }
 
 
@@ -198,6 +238,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right rem(-218) top 0px;
+
+  @media screen and (max-width: $desktopWidth) {
+    position: relative;
+    right: 2.857vw;
+    height: 440px;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    position: static;
+  }
 
   &::before {
     position: relative;
@@ -258,6 +308,19 @@
   padding-bottom: 9.9vh;
   padding-left: 3.857vw;
   padding-right: 6.857vw;
+
+  @media screen and (max-width: $desktopWidth) {
+    padding-bottom: 4vh;
+    padding-top: 2.9vh;
+    padding-bottom: 2.9vh;
+    padding-left: 2.857vw;
+    padding-right: 7.857vw;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 // Text block
@@ -266,6 +329,12 @@
   flex-direction: column;
   justify-content: space-between;
   height: 37.755vh;
+
+  @media screen and (max-width: $desktopWidth) {
+    align-items: center;
+    height: 250px;
+    margin-bottom: 3%;
+  }
   
   &__heading {
     max-width: rem(532);
@@ -273,6 +342,14 @@
     font-size: 6.122vh;
     font-weight: 400;
     line-height: 7.125vh;
+
+    @media screen and (max-width: $desktopWidth) {
+      max-width: 100%;
+      margin-bottom: 20px;
+      font-size: 4.5rem;
+      line-height: 5rem;
+      text-align: center;
+    }
   }
 
   &__dscr {
@@ -282,6 +359,12 @@
     font-size: rem(21);
     font-weight: 400;
     line-height: rem(34);
+
+    @media screen and (max-width: $desktopWidth) {
+      max-width: 80%;
+      font-size: rem(26);
+      text-align: center;
+    }
   }
 }
 
@@ -289,6 +372,10 @@
 .feat-box-wrap {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: $desktopWidth) {
+    justify-content: space-evenly;
+  }
 }
 
 .feat-box {
@@ -358,6 +445,14 @@
     font-weight: 400;
     line-height: 7.125vh;
     margin-bottom: rem(68);
+
+    @media screen and (max-width: $desktopWidth) {
+      position: static;
+      max-width: 100%;
+      font-size: 4.5rem;
+      line-height: 5rem;
+      text-align: center;
+    }
   }
 }
 
@@ -498,6 +593,13 @@
   padding-bottom: rem(47);
   background-color: $grey-dark;
   color: $white;
+
+  @media screen and (max-width: $desktopWidth) {
+    height: rem(320);
+    padding-top: rem(37);
+    padding-left: rem(60);
+    padding-right: rem(75);
+  }
 }
 
 .whois {
@@ -505,6 +607,11 @@
   justify-content: space-between;
   padding-left: rem(174);
   padding-right: rem(141);
+
+  @media screen and (max-width: $desktopWidth) {
+    padding-left: rem(70);
+    padding-right: rem(30);
+  }
 }
 
 .whois-name,
@@ -584,6 +691,10 @@
   width: rem(40);
   height: rem(41);
 
+  @media screen and (max-width: $smDesktopWidth) {
+    display: none;
+  }
+
   &__line {
     width: rem(19);
     height: 1px;
@@ -608,9 +719,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: rem(78);
+  width: 5.571vw;
   height: 100vh;
   padding-top: rem(48);
+
+  @media screen and (max-width: $smDesktopWidth) {
+    display: none;
+  }
 
   &--text-color {
     color: $black;
@@ -621,7 +736,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: rem(38);
+  height: 38px;
   margin: 0 auto;
   transition: all .2s ease-in-out;
 
@@ -630,8 +745,8 @@
   }
 
   &__sign {
-    width: 18px;
-    height: 17px;
+    width: rem(18);
+    height: rem(17);
     margin: 0 auto;
 
     @include img-position("/img/logo-menu.png");
@@ -640,7 +755,7 @@
   &__dscr {
     margin: 0 auto;
     font-family: "Raleway - Extra Bold";
-    font-size: 11px;
+    font-size: rem(11);
     font-weight: 400;
     text-transform: uppercase;
     opacity: 0.5;
@@ -654,6 +769,10 @@
   height: 18px;
   transform: rotate(270deg) translate(134px, -80px);
   line-height: 18px;
+
+  @media screen and (max-width: $desktopWidth) {
+    transform: rotate(270deg) translate(134px, -97px);
+  }
 }
 
 .sidebar-social-vk,

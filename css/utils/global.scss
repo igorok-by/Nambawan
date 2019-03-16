@@ -2,19 +2,29 @@ html{
 	font-size: $mainFontSize;
 	
 	@media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
+		font-size: 14px;
+	}
+	@media screen and (max-width: $smDesktopWidth) {
+		font-size: 12px;
   }
   @media screen and (max-width: $tableWidth) {
-		font-size: 15px;
+		font-size: 11px;
   }
   @media screen and (max-width: $phoneWidth) {
-		font-size: 14px;
+		font-size: 10px;
+	}
+	@media screen and (max-width: $smPhoneWidth) {
+		font-size: 9px;
   }
 }
 
 body {
 	margin-left: 5.571vw;
-  font-family: "Raleway", sans-serif;
+	font-family: "Raleway", sans-serif;
+	
+	@media screen and (max-width: $smDesktopWidth) {
+    margin-left: 0;
+  }
 }
 
 * {
