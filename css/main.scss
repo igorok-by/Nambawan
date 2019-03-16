@@ -15,12 +15,22 @@
   &--first {
     padding-left: 3.857vw;
     padding-right: 7vw;
-    padding-top: 3.071vw;
-    background: url("/img/first-screen_overlay.png"), url("/img/first-screen_mountain.png");
+    padding-top: 5.598vh;
+    background: url("/img/first-screen_mountain.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-position: -371px -86px;
     color: $white;
+  }
+
+  &--first::before {
+    position: absolute;
+    top: 0;
+    left: 5.571vw;
+    display: block;
+    width: 94.429vw;
+    height: 100%;
+    content: '';
+    @include img-position("/img/first-screen_overlay.png");
   }
 }
 
@@ -28,6 +38,7 @@
 // Header
 
 .first-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -38,12 +49,12 @@
   height: rem(54);
 
   @include img-position("/img/header-logo.png");
+
 }
 
 .first-phone {
-  margin-top: rem(4);
   text-align: right;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &:hover {
     color: $primary;
@@ -51,7 +62,7 @@
 
   &__numb {
     height: rem(14);
-    margin-bottom: rem(9);
+    margin-bottom: rem(17);
     font-family: "Raleway - Extra Bold";
     font-size: rem(17);
     font-weight: 400;
@@ -69,21 +80,23 @@
 // Front First screen
 
 .first-front {
-  margin-top: 15.944vh;
-  margin-bottom: 16.582vh;
+  position: relative;
+  margin-top: 15.522vh;
+  margin-bottom: 15.522vh;
 
   &__heading {
-    margin-bottom: 4.464vh;
+    margin-bottom: 2.29vh;
     font-family: "Raleway - Extra Bold";
-    font-size: 2.679vh;
-    // color: $primary;
-    letter-spacing: rem(1.05);
+    font-size: 2.545vh;
+    letter-spacing: rem(1.65);
   }
 
   &__dscr {
+    margin: 0;
     max-width: 70vw;
     font-family: "Raleway - Extra Bold";
-    font-size: 7.143vh;
+    font-size: 7.1vh;
+    line-height: 8.715vh;
   }
 }
 
@@ -91,6 +104,7 @@
 // Footer First screen
 
 .first-footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: rem(853);
@@ -101,15 +115,16 @@
 .first-feature {
   width: rem(252);
   padding-right: rem(60);
-  padding-bottom: rem(15);
+  padding-bottom: rem(12);
   border-bottom-style: solid;
-  border-bottom-width: rem(2);
+  border-bottom-width: rem(3);
   border-bottom-color: rgba(145, 145, 145, 0.49);
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
   font-family: "Raleway - Semi Bold";
   font-size: rem(15);
   font-weight: 400;
   letter-spacing: 0.45px;
+  line-height: rem(18);
 
   &:hover {
     border-bottom-color: $primary;
@@ -131,9 +146,10 @@
     position: absolute;
     bottom: 0;
     right: 7vw;
-    background-color: $primary;
+    padding-top: rem(6);
     padding-left: rem(38);
     padding-right: rem(48);
+    background-color: $primary;
     color: $white;
   }
 
@@ -146,7 +162,7 @@
 
   &__sign--animate {
     animation: top-down 1s ease-in-out infinite;
-    margin-bottom: rem(9);
+    margin-bottom: rem(11);
   }
 
   @keyframes top-down {
@@ -181,7 +197,7 @@
   background: url("/img/second-screen_jumper.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right rem(-212) top 0px;;
+  background-position: right rem(-218) top 0px;
 
   &::before {
     position: relative;
@@ -195,21 +211,27 @@
 
 .video-btn {
   position: relative;
-  left: 15.68vw;
-  bottom: 55.21%;
+  left: 16.16vw;
+  bottom: 54.9%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: rem(125);
-  height: rem(114);
+  height: rem(116);
+
+  &:hover {
+    .video-btn__dscr {
+      color: $primary;
+    }
+  }
 
   &__sign {
     position: relative;
     left: rem(2);
     width: rem(76);
     height: rem(76);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 
     @include img-position("/img/play-btn.png");
   }
@@ -220,6 +242,7 @@
     font-weight: 700;
     line-height: rem(21);
     color: $white;
+    transition: all .2s ease-in-out;
   }
 }
 
@@ -230,8 +253,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 14.031vh;
-  padding-bottom: 9.184vh;
+  width: 100%;
+  padding-top: 12.9vh;
+  padding-bottom: 9.9vh;
   padding-left: 3.857vw;
   padding-right: 6.857vw;
 }
@@ -274,10 +298,10 @@
   align-items: center;
   width: 18.286vw;
   height: rem(197);
-  padding: rem(29) 1.714vw;
+  padding: rem(29) 1.6vw;
   background-color: $grey-light;
   border: 1px solid $grey-light;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &:hover {
     border-color: $primary;
@@ -321,16 +345,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: rem(78);
+  padding-top: rem(61);
+  padding-bottom: rem(97);
   padding-left: rem(110);
-  padding-right: rem(110);
+  padding-right: rem(156);
 
   &__heading {
+    position: relative;   // Only for 'Pixel perfect'
+    left: 6px;            // Only for 'Pixel perfect'
     font-family: "Raleway - Extra Bold";
     font-size: 6.122vh;
     font-weight: 400;
     line-height: 7.125vh;
-    margin-bottom: rem(78);
+    margin-bottom: rem(68);
   }
 }
 
@@ -338,9 +365,9 @@
 .gallery {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   width: 100%;
-  margin-bottom: rem(58);
+  margin-bottom: rem(55);
   
   &--reverse {
     flex-direction: row-reverse;
@@ -351,7 +378,7 @@
 .gallery-img {
 
   &__photo {
-    margin-bottom: rem(21);
+    margin-bottom: rem(14);
     width: rem(454);
     height: rem(316); 
   }
@@ -384,8 +411,9 @@
     font-size: 11px;
     font-weight: 400;
     line-height: 18px;
+    letter-spacing: rem(1.5);
     color: rgb(179, 179, 179);
-    transform: rotate(270deg) translate(rem(257), rem(-240));
+    transform: rotate(270deg) translate(rem(250), rem(-262));
 
     b {
       font-family: "Raleway - Extra Bold";
@@ -400,7 +428,7 @@
     line-height: 18px;
     text-transform: uppercase;
     color: rgb(179, 179, 179);
-    transform: rotate(270deg) translate(0, rem(254));
+    transform: rotate(270deg) translate(0, rem(263));
   }
 }
 
@@ -420,7 +448,7 @@
     height: rem(60);
     @include img-position("/img/btn-arrow_left.png");
     background-size: auto;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
   }
   
   &__right {
@@ -428,7 +456,7 @@
     height: rem(60);
     @include img-position("/img/btn-arrow_right.png");
     background-size: auto;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
   }
 
   &__left:hover,
@@ -439,7 +467,8 @@
 
 // Slogan
 .slogan {
-  margin-right: rem(87);
+  margin-top: 9.5%;
+  margin-right: rem(82);
   margin-left: rem(96);
   text-align: center;
   font-family: Raleway;
@@ -458,46 +487,81 @@
 // Footer
 
 .foot-box {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: rem(380);
+  padding-top: rem(86);
+  padding-left: rem(82);
+  padding-right: rem(157);
+  padding-bottom: rem(47);
+  background-color: $grey-dark;
+  color: $white;
 }
 
 .whois {
-
+  display: flex;
+  justify-content: space-between;
+  padding-left: rem(174);
+  padding-right: rem(141);
 }
 
-.whois-name {
-
-  &__heading {
-
-  }
-
-  &__dscr {
-    
-  }
-}
-
+.whois-name,
 .whois-time {
 
   &__heading {
-
+    padding-bottom: rem(22);
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: rem(12);
+    text-transform: uppercase;
+    opacity: 0.5;
   }
 
   &__dscr {
-    
+    font-family: Raleway;
+    font-size: rem(21);
+    font-weight: 300;
+    line-height: rem(22);
   }
 }
 
 .task {
-  &__header {
+  text-align: center;
 
+  &__header {
+    position: relative;   // Only for 'Pixel perfect'
+    right: 13px;            // Only for 'Pixel perfect'
+    padding-bottom: rem(10);
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(16);
+    color: $primary;
   }
     
   &__dscr {
+    padding-bottom: rem(21);
+    font-family: "Raleway - Light";
+    font-size: 15px;
+    line-height: rem(20);
+    font-weight: 300;
 
+    strong {
+      font-family: "Raleway - Extra Bold";
+      font-weight: 400;
+    }
   }
     
   &__ps {
-
+    font-family: Raleway;
+    font-size: rem(13);
+    font-weight: 300;
+    line-height: rem(13);
+    text-transform: uppercase;
+    opacity: 0.7;
   }
 }
 /*-------end--------*/
@@ -511,7 +575,7 @@
 
 .nav {
   position: fixed;
-  top: calc( 100vh / 2 - 20px );
+  top: 43.7vh;
   right: rem(28);
   display: flex;
   flex-direction: column;
@@ -546,7 +610,7 @@
   justify-content: space-between;
   width: rem(78);
   height: 100vh;
-  padding-top: rem(45);
+  padding-top: rem(48);
 
   &--text-color {
     color: $black;
@@ -559,7 +623,7 @@
   justify-content: space-between;
   height: rem(38);
   margin: 0 auto;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &:hover {
     color: $primary;
@@ -586,16 +650,17 @@
 .sidebar-social {
   display: flex;
   justify-content: space-between;
-  width: 240px;
+  width: 242px;
   height: 18px;
-  transform: rotate(270deg) translate(130px, -80px);
+  transform: rotate(270deg) translate(134px, -80px);
   line-height: 18px;
 }
 
-.sidebar-social-vk, .sidebar-social-inst {
+.sidebar-social-vk,
+.sidebar-social-inst {
   display: flex;
   justify-content: space-between;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
   
   &:hover {
     color: $primary;
@@ -604,14 +669,15 @@
   &__dscr {
     opacity: 0.4;
     font-family: Raleway;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1.3px;
   }
 }
 
 .sidebar-social-vk {
-  width: 108px;
+  width: 110px;
 
   &__sign {
     width: 25px;
@@ -622,7 +688,7 @@
 }
 
 .sidebar-social-inst {
-  width: 97px;
+  width: 100px;
 
   &__sign {
     width: 17px;
