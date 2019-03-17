@@ -22,7 +22,7 @@ body {
 	margin-left: 5.571vw;
 	font-family: "Raleway", sans-serif;
 	
-	@media screen and (max-width: $smDesktopWidth) {
+	@media screen and (max-width: $tableWidth) {
     margin-left: 0;
   }
 }

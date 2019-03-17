@@ -129,6 +129,18 @@
       font-size: 70px;
       line-height: 85px;
     }
+    @media screen and (max-width: $smDesktopWidth) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @media screen and (max-width: $tableWidth) {
+      font-size: 45px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
   
 }
@@ -140,7 +152,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: rem(853);
+  max-width: rem(853);
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    min-height: 150px;
+  }
 }
 
 
@@ -247,12 +264,14 @@
 
   @media screen and (max-width: $tableWidth) {
     position: static;
+    min-width: 350px;
   }
 
   &::before {
     position: relative;
     display: block;
     width: 45.714vw;
+    min-width: 350px;
     height: 100%;
     content: '';
     @include img-position("/img/second-screen_overlay.png");
@@ -269,6 +288,12 @@
   align-items: center;
   width: rem(125);
   height: rem(116);
+
+  @media screen and (max-width: $desktopWidth) {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+	}
 
   &:hover {
     .video-btn__dscr {
@@ -332,7 +357,7 @@
 
   @media screen and (max-width: $desktopWidth) {
     align-items: center;
-    height: 250px;
+    height: auto;
     margin-bottom: 3%;
   }
   
@@ -374,7 +399,8 @@
   justify-content: space-between;
 
   @media screen and (max-width: $desktopWidth) {
-    justify-content: space-evenly;
+    justify-content: center;
+
   }
 }
 
@@ -383,12 +409,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 18.286vw;
+  width: rem(256);
   height: rem(197);
   padding: rem(29) 1.6vw;
   background-color: $grey-light;
   border: 1px solid $grey-light;
   transition: all .2s ease-in-out;
+
+  @media screen and (max-width: $desktopWidth) {
+		margin: 0 10px;
+	}
 
   &:hover {
     border-color: $primary;
@@ -466,6 +496,16 @@
   
   &--reverse {
     flex-direction: row-reverse;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -652,7 +692,7 @@
   &__dscr {
     padding-bottom: rem(21);
     font-family: "Raleway - Light";
-    font-size: 15px;
+    font-size: rem(15);
     line-height: rem(20);
     font-weight: 300;
 
@@ -723,7 +763,7 @@
   height: 100vh;
   padding-top: rem(48);
 
-  @media screen and (max-width: $smDesktopWidth) {
+  @media screen and (max-width: $tableWidth) {
     display: none;
   }
 

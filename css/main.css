@@ -20,7 +20,7 @@ html {
 body {
   margin-left: 5.571vw;
   font-family: "Raleway", sans-serif; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 768px) {
     body {
       margin-left: 0; } }
 
@@ -153,12 +153,28 @@ i {
       .first-front__dscr {
         font-size: 70px;
         line-height: 85px; } }
+    @media screen and (max-width: 980px) {
+      .first-front__dscr {
+        font-size: 60px;
+        line-height: 70px; } }
+    @media screen and (max-width: 768px) {
+      .first-front__dscr {
+        font-size: 45px;
+        line-height: 50px; } }
+    @media screen and (max-width: 480px) {
+      .first-front__dscr {
+        font-size: 35px;
+        line-height: 40px; } }
 
 .first-footer {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 53.3125rem; }
+  max-width: 53.3125rem; }
+  @media screen and (max-width: 650px) {
+    .first-footer {
+      flex-direction: column;
+      min-height: 150px; } }
 
 .first-feature {
   width: 15.75rem;
@@ -241,11 +257,13 @@ i {
       height: 440px; } }
   @media screen and (max-width: 768px) {
     .video {
-      position: static; } }
+      position: static;
+      min-width: 350px; } }
   .video::before {
     position: relative;
     display: block;
     width: 45.714vw;
+    min-width: 350px;
     height: 100%;
     content: '';
     background: url("/img/second-screen_overlay.png");
@@ -263,6 +281,11 @@ i {
   align-items: center;
   width: 7.8125rem;
   height: 7.25rem; }
+  @media screen and (max-width: 1280px) {
+    .video-btn {
+      left: 0;
+      margin-left: auto;
+      margin-right: auto; } }
   .video-btn:hover .video-btn__dscr {
     color: #10e08b; }
   .video-btn__sign {
@@ -312,7 +335,7 @@ i {
   @media screen and (max-width: 1280px) {
     .feat-text {
       align-items: center;
-      height: 250px;
+      height: auto;
       margin-bottom: 3%; } }
   .feat-text__heading {
     max-width: 33.25rem;
@@ -345,19 +368,22 @@ i {
   justify-content: space-between; }
   @media screen and (max-width: 1280px) {
     .feat-box-wrap {
-      justify-content: space-evenly; } }
+      justify-content: center; } }
 
 .feat-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 18.286vw;
+  width: 16rem;
   height: 12.3125rem;
   padding: 1.8125rem 1.6vw;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   transition: all .2s ease-in-out; }
+  @media screen and (max-width: 1280px) {
+    .feat-box {
+      margin: 0 10px; } }
   .feat-box:hover {
     border-color: #10e08b; }
   .feat-box__sign {
@@ -418,6 +444,14 @@ i {
   margin-bottom: 3.4375rem; }
   .gallery--reverse {
     flex-direction: row-reverse; }
+    @media screen and (max-width: 650px) {
+      .gallery--reverse {
+        flex-direction: column;
+        align-items: center; } }
+  @media screen and (max-width: 650px) {
+    .gallery {
+      flex-direction: column;
+      align-items: center; } }
 
 .gallery-img__photo {
   margin-bottom: 0.875rem;
@@ -572,7 +606,7 @@ i {
   .task__dscr {
     padding-bottom: 1.3125rem;
     font-family: "Raleway - Light";
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.25rem;
     font-weight: 300; }
     .task__dscr strong {
@@ -624,7 +658,7 @@ i {
   width: 5.571vw;
   height: 100vh;
   padding-top: 3rem; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 768px) {
     .sidebar {
       display: none; } }
   .sidebar--text-color {
