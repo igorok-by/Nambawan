@@ -23,7 +23,7 @@
     padding-left: 3.857vw;
     padding-right: 7vw;
     padding-top: 5.598vh;
-    background: url("/img/first-screen_mountain.png");
+    background: url("../img/first-screen_mountain.png");
     background-repeat: no-repeat;
     background-position: -371px -86px;
     color: $white;
@@ -42,7 +42,7 @@
     height: 100%;
     max-height: 890px;
     content: '';
-    @include img-position("/img/first-screen_overlay.png");
+    @include img-position("../img/first-screen_overlay.png");
 
     @media screen and (max-width: $tableWidth) {
       left: 0;
@@ -71,7 +71,7 @@
   width: rem(122);
   height: rem(54);
 
-  @include img-position("/img/header-logo.png");
+  @include img-position("../img/header-logo.png");
 }
 
 .first-phone {
@@ -206,7 +206,7 @@
     width: 16px;
     height: 31px;
 
-    @include img-position("/img/btn-arrow.png");
+    @include img-position("../img/btn-arrow.png");
   }
 
   &__sign--animate {
@@ -251,7 +251,7 @@
 
 .video {
   width: 45.714vw;
-  background: url("/img/second-screen_jumper.png");
+  background: url("../img/second-screen_jumper.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right rem(-218) top 0px;
@@ -274,7 +274,7 @@
     min-width: 350px;
     height: 100%;
     content: '';
-    @include img-position("/img/second-screen_overlay.png");
+    @include img-position("../img/second-screen_overlay.png");
   }
 }
 
@@ -308,7 +308,7 @@
     height: rem(76);
     transition: all .2s ease-in-out;
 
-    @include img-position("/img/play-btn.png");
+    @include img-position("../img/play-btn.png");
   }
 
   &__dscr {
@@ -430,14 +430,14 @@
   }
 
   &__sign--world {
-    @include img-position("/img/feat-world.png");
+    @include img-position("../img/feat-world.png");
   }
 
   &__sign--space {
     width: rem(77);
     height: rem(82);
 
-    @include img-position("/img/feat-space.png");
+    @include img-position("../img/feat-space.png");
   }
 
   &__dscr {
@@ -519,11 +519,11 @@
   }
 
   &__photo--snow {
-    @include img-position("/img/gallery-snow.png");
+    @include img-position("../img/gallery-snow.png");
   }
 
   &__photo--sea {
-    @include img-position("/img/gallery-sea.png");
+    @include img-position("../img/gallery-sea.png");
   }
 
   &__dscr {
@@ -581,7 +581,7 @@
   &__left {
     width: rem(40);
     height: rem(60);
-    @include img-position("/img/btn-arrow_left.png");
+    @include img-position("../img/btn-arrow_left.png");
     background-size: auto;
     transition: all .2s ease-in-out;
   }
@@ -589,7 +589,7 @@
   &__right {
     width: rem(40);
     height: rem(60);
-    @include img-position("/img/btn-arrow_right.png");
+    @include img-position("../img/btn-arrow_right.png");
     background-size: auto;
     transition: all .2s ease-in-out;
   }
@@ -789,7 +789,7 @@
     height: rem(17);
     margin: 0 auto;
 
-    @include img-position("/img/logo-menu.png");
+    @include img-position("../img/logo-menu.png");
   }
 
   &__dscr {
@@ -842,7 +842,7 @@
     width: 25px;
     height: 15px;
 
-    @include img-position("/img/logo-vk.png");
+    @include img-position("../img/logo-vk.png");
   }
 }
 
@@ -853,7 +853,7 @@
     width: 17px;
     height: 17px;
 
-    @include img-position("/img/logo-inst.png");
+    @include img-position("../img/logo-inst.png");
   }
 }
 /*-------end--------*/

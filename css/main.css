@@ -70,7 +70,7 @@ i {
     padding-left: 3.857vw;
     padding-right: 7vw;
     padding-top: 5.598vh;
-    background: url("/img/first-screen_mountain.png");
+    background: url("../img/first-screen_mountain.png");
     background-repeat: no-repeat;
     background-position: -371px -86px;
     color: white; }
@@ -86,7 +86,7 @@ i {
     height: 100%;
     max-height: 890px;
     content: '';
-    background: url("/img/first-screen_overlay.png");
+    background: url("../img/first-screen_overlay.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -108,7 +108,7 @@ i {
 .first-logo {
   width: 7.625rem;
   height: 3.375rem;
-  background: url("/img/header-logo.png");
+  background: url("../img/header-logo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -210,7 +210,7 @@ i {
   .first-button__sign {
     width: 16px;
     height: 31px;
-    background: url("/img/btn-arrow.png");
+    background: url("../img/btn-arrow.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -246,7 +246,7 @@ i {
 
 .video {
   width: 45.714vw;
-  background: url("/img/second-screen_jumper.png");
+  background: url("../img/second-screen_jumper.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right -13.625rem top 0px; }
@@ -266,7 +266,7 @@ i {
     min-width: 350px;
     height: 100%;
     content: '';
-    background: url("/img/second-screen_overlay.png");
+    background: url("../img/second-screen_overlay.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -294,7 +294,7 @@ i {
     width: 4.75rem;
     height: 4.75rem;
     transition: all .2s ease-in-out;
-    background: url("/img/play-btn.png");
+    background: url("../img/play-btn.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -390,14 +390,14 @@ i {
     width: 4.6875rem;
     height: 4.6875rem; }
   .feat-box__sign--world {
-    background: url("/img/feat-world.png");
+    background: url("../img/feat-world.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
   .feat-box__sign--space {
     width: 4.8125rem;
     height: 5.125rem;
-    background: url("/img/feat-space.png");
+    background: url("../img/feat-space.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -459,13 +459,13 @@ i {
   height: 19.75rem; }
 
 .gallery-img__photo--snow {
-  background: url("/img/gallery-snow.png");
+  background: url("../img/gallery-snow.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 .gallery-img__photo--sea {
-  background: url("/img/gallery-sea.png");
+  background: url("../img/gallery-sea.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -514,7 +514,7 @@ i {
   .gallery-btn__left {
     width: 2.5rem;
     height: 3.75rem;
-    background: url("/img/btn-arrow_left.png");
+    background: url("../img/btn-arrow_left.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -523,7 +523,7 @@ i {
   .gallery-btn__right {
     width: 2.5rem;
     height: 3.75rem;
-    background: url("/img/btn-arrow_right.png");
+    background: url("../img/btn-arrow_right.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -677,7 +677,7 @@ i {
     width: 1.125rem;
     height: 1.0625rem;
     margin: 0 auto;
-    background: url("/img/logo-menu.png");
+    background: url("../img/logo-menu.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -722,7 +722,7 @@ i {
   .sidebar-social-vk__sign {
     width: 25px;
     height: 15px;
-    background: url("/img/logo-vk.png");
+    background: url("../img/logo-vk.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -732,7 +732,7 @@ i {
   .sidebar-social-inst__sign {
     width: 17px;
     height: 17px;
-    background: url("/img/logo-inst.png");
+    background: url("../img/logo-inst.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
